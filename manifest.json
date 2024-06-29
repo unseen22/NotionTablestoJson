@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Notion JSON Exporter",
+  "version": "1.0",
+  "description": "Export Notion database to JSON",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "https://api.notion.com/*"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.notion.so/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Notion JSON Exporter"
+  }
+}
