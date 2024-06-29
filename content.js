@@ -29,8 +29,8 @@ function addExportButton() {
       z-index: 9999;
     }
     #notion-json-export-button {
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
       background-color: rgba(46, 170, 220, 0.5);
       color: rgba(255, 255, 255, 0.8);
@@ -47,7 +47,7 @@ function addExportButton() {
       text-align: center;
     }
     #notion-json-export-button:hover {
-      background-color: rgba(46, 170, 220, 1);
+      background-color: rgba(35, 131, 226, 1);
       color: white;
       transform: scale(1.1);
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
